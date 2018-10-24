@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<title>点击进入</title>
-	
-	<style>
-.demo{
-text-decoration:none;
-
-}
-
-    
-    body {/* 加载背景图 */background-image: url(aa.jpg);/* 背景图垂直、水平均居中 */background-position: center center;/* 背景图不平铺 */background-repeat: no-repeat;/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */background-attachment: fixed;/* 让背景图基于容器大小伸缩 */background-size: cover;/* 设置背景颜色，背景图加载过程中会显示背景色 */background-color: #464646;}
-	
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<style type="text/css">
+		*{
+			padding: 0px; margin: 0 auto;
+		}
+		body{
+			background: -webkit-linear-gradient(left, #ff8f17 , #FE7660);
+			background: -o-linear-gradient(right, #ff8f17, #FE7660); 
+			background: -moz-linear-gradient(right, #ff8f17, #FE7660); 
+			background: linear-gradient(to right, #ff8f17 , #FE7660);
+		}
 	</style>
-	<script>
-    window.onload = function() {
-		var h= document.documentElement.clientHeight ;
-       document.getElementById('demo2').style.height=h+"px";
-    
-    }
-		
-     
-
-	</script>
-</head>
-<body>
-	<a  style="width:100%;height:100%;display:block;"class="demo" href="./demo1.html"><div id="demo2" style="width: 100%;"></div></a>
-	
-	
-	
-	
-</body>
+	<body>
+		<div style="text-align: center;">
+		<div  style="font-size: 25px; color: white; padding-top: 200px;">官方软件&nbsp;假冒讲究</div>
+		<div class="btn btn-default" style="margin-top: 300px; width: 150px;"><a style="text-decoration: none;color: #891F23;" href="biao.html">点击进入</a></div>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 </html>
