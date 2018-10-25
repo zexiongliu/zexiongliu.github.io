@@ -1,26 +1,3 @@
-<!--<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<style type="text/css">
-		div{
-			width: 100%; height: 989px;
-			background-image: url(img/wei.png);
-		}
-	</style>
-	<body>
-		<div>
-			
-		</div>
-	</body>
-</html>
-
-
--->
 <!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -31,30 +8,44 @@
 	<title>Document</title>
 </head>
 <style type="text/css">
-body{
-/* 加载背景图 */
-background-image: url(img/wei.png);
-
-/* 背景图垂直、水平均居中 */
-background-position: center center;
-
-/* 背景图不平铺 */
-background-repeat: no-repeat;
-
-/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
-background-attachment: fixed;
-
-/* 让背景图基于容器大小伸缩 */
-background-size: cover;
-
-/* 设置背景颜色，背景图加载过程中会显示背景色 */
-background-color: #FDFDFD;
+	
+body:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(img/wei.png) center 0 no-repeat;
+  background-size: cover;
 }
+
+/* body{
+加载背景图 
+background-image: url(img/wei.png);*/
+
+/* 背景图垂直、水平均居中
+background-position: center; */
+
+/* 背景图不平铺 
+background-repeat: no-repeat;*/
+
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 
+background-attachment: fixed;*/
+
+/* 让背景图基于容器大小伸缩 
+background-size: cover;*/
+
+/* 设置背景颜色，背景图加载过程中会显示背景色 
+background-color: #FDFDFD;
+
+}*/
 .div1{
 		border: 5px solid black;
 		padding-top: 20px;
 		padding-bottom: 25px;
-		margin-top: 22%;
+		margin-top: 20%;
 	}
 	.div1 div{
 		font-weight: bold;
@@ -70,6 +61,7 @@ background-color: #FDFDFD;
 		padding-top: 10px;
 	}
 	a{
+		font-family: "微软雅黑";
 		text-decoration: none;
 		color: black;
 	}
